@@ -1,0 +1,40 @@
+body{
+    background-image: url(../assets/img/gamedark.png);
+    background-size: 15%;
+    position: relative;
+}
+.title{
+    height: 250px;
+    background-image: url(../assets/img/gamedark.png);
+    position: relative;
+}
+
+/*body elements*/
+
+.main{
+    text-align: justify;
+    text-indent: 30px;
+    grid-area: main;
+    background-color: #130d0de1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px dashed #0e8cb7;
+    color: white;
+}
+.aside{
+    color: white;
+    text-align: justify;
+    text-indent: 30px;
+    background-color: rgba(21, 21, 18, 0.919);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px dashed #0e8cb7;
+    max-width: 800px;
+}
+h1,h3{
+    text-align: center;
+    color: rgb(35, 116, 187);
+    text-transform:capitalize;
+}

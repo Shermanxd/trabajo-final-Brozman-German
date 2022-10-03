@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+#navlogo{
+    width: 20px;
+}
+body{
+    background-image: url(../assets/img/gamelight.png);
+    background-size: 15%;
+    position: relative;
+    min-width: 1200px;
+}
+.title{
+    height: 250px;
+    background-image: url(../assets/img/gamelight.png);
+    position: relative;
+}
+#banner {
+    padding-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 230px;
+}
+
+/*positioning*/
+
+#flex {
+    display: flex;  
+    flex-wrap: wrap;  
+    flex-direction: right; 
+}
+#flex > aside {
+    width: 24%; 
+}
+#flex > article {
+    width: 48%; 
+}
+
+/* body elements*/
+
+.main{
+    text-align: justify;
+    text-indent: 30px;
+    grid-area: main;
+    background-color: #ffffffe0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px dashed #0e8cb7;
+}
+.linkP{
+    text-align: center;
+}
+
+.mainpic{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.aside{
+    color: black;
+    text-align: justify;
+    text-indent: 30px;
+    grid-area: aside;
+    background-color: rgb(220, 222, 136);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px dashed #0e8cb7;
+}
+h1,h3{
+    text-align: center;
+    color: rgb(35, 116, 187);
+    text-transform:capitalize;
+}
+#not{
+    margin: 15px;
+    padding: 2%;
+    border: 3px  ;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.foot{
+    text-align: center;
+    background-color: rgb(85, 191, 233);
+    color: aliceblue;
+    line-height: 40px;
+    height: 40px; 
+}
+ 
+

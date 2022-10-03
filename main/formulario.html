@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="theme" rel="stylesheet" href="CSS/formulariol.css">
+  <link id="theme" rel="stylesheet" href="CSS/indark.css" />
+  <script src="javascript.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="icon" href="assets/icons/retro.png">    
+  <title>GEEK'S SHRINE</title>
+</head>
+<style>
+  
+
+
+</style>
+
+<body>
+<script>
+function toggleTheme() {
+
+var theme = document.getElementsByTagName('link')[1];
+
+if (theme.getAttribute('href') == 'CSS/indark.css') {
+theme.setAttribute('href', 'CSS/inlight.css');
+} else {
+theme.setAttribute('href', 'CSS/indark.css');
+}
+}
+</script>
+<header class="title">          
+  <a href="index.html">
+  <img id="banner" src="assets/img/banner.png"></a>
+</header>
+<nav id="navbar" class="navbar navbar-expand-lg bg-info">
+  <div class="container-fluid">
+    <span onclick="toggleTheme()">
+      <img src="assets/icons/joystickBW.png" id="navlogo" alt="">
+    </span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">PRINCIPAL</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="formulario.html">STORE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <body>
+
+  <br>
+<div id="grid container">
+  <div id="prod">
+    <img class="imgage" src="assets/img/geek tshit.png" alt="">
+    <img class="imgage" src="assets/img/geek cap.png" alt="">
+    <img class="imgage" src="assets/img/stickers.png" alt="">
+  </div>
+  
+  <br>
+  <form id="form">
+      <br>
+      <div>
+      <b>producto</b>
+       <select id="item" >  
+         <option value="1000" selected>remera</option>
+          <option value="450" selected>gorra</option>
+          <option value="150" selected>stickers</option>
+          <option value="" selected></option>
+       </select>
+      </div>
+      <div>
+      <b>cantidad</b>
+         <select id="cantidad" >  
+           <option value="1" selected>1</option>
+            <option value="2" selected>2</option>
+            <option value="3" selected>3</option>
+            <option value="" selected></option>
+         </select>
+      </div>
+    <div>
+      <b>envio</b>
+      <select id="tipoenvio" onchange="calcula()">
+          <option value="0" selected>retiro en local</option>
+          <option value="350" selected>envio a domicilio</option>
+          <option value="" selected></option>
+
+      </select>
+     <br>
+      <b style="color: rgb(0, 0, 0);">Pagas:</b>
+      <div class="form" id="salida" >$ </div>
+      <form method="" action="">
+      <b>Dejar comentario:</b><br>
+      <textarea cols="25" rows="5" placeholder="Indique el color de su eleccion. Disponibles: 
+      amarillo,
+      negro,
+      blaco" ></textarea><br>
+      <input type="submit" value="send"><br><br>
+      </form>
+    </div>  
+</div> 
+<br>
+
+
+<footer class="foot">
+      &copy BROZMAN GERMAN ARIEL
+</footer>
+
+</body>
+</html>

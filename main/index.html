@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="theme" rel="stylesheet" href="CSS/inlight.css">
+  <link id="theme" rel="stylesheet" href="CSS/indark.css" />
+  <script src="../main/javascript.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="icon" href="assets/icons/retro.png">    
+  <title>GEEK'S SHRINE</title>
+</head>
+<style>
+  #wp{
+    width: 55px;
+    position: fixed;
+    right: -20px;
+    bottom: 50px;
+  }
+  #wp:hover{
+    transform: translateX(-50px);
+    transition-duration: 1s;  }
+ 
+  
+</style>
+<script>
+      let edad = prompt("Introduce tu edad");
+              if (edad >=18){
+              } else {
+              alert("Ingresas bajo tu propia responsabilidad");
+              }      
+
+      function exit(){
+          alert('¿Estas seguro que deseas abandonar está página?');
+      }
+</script>
+<body>
+<script>
+function toggleTheme() {
+
+var theme = document.getElementsByTagName('link')[1];
+
+if (theme.getAttribute('href') == 'CSS/indark.css') {
+theme.setAttribute('href', 'CSS/inlight.css');
+} else {
+theme.setAttribute('href', 'CSS/indark.css');
+}
+}
+</script>
+  <header class="title">
+    <a href="index.html">
+    <img id="banner" src="assets/img/banner.png"></a>
+  </header>
+  <nav id="navbar" class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <span onclick="toggleTheme()">
+        <img src="assets/icons/joystickBW.png" id="navlogo" alt="">
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">PRINCIPAL</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h2 id="not">principal</h1>
+
+  <div class="grid-container">
+    <div id="flex">
+        <article class="main">
+          <a href="GAME SACK.html">
+          <h1>GAME SACK</h1></a>
+          <h5>Imperdible canal de youtube</h5>
+          <img src="assets/body/Joe_and_Dave.jpg" class="mainpic" class alt="">
+        </article>
+
+        <article class="main">
+          <a href="retro gaming.html">
+          <h1>Retro Gaming</h1></a>
+          <h5>Emulacion o hardware original?</h5>
+          <img src="assets/body/retrocollage.jpg" class="mainpic" class alt="">
+        </article>
+
+        <article class="main">
+          <a href="https://youtu.be/jQfML6XoFPM" onclick="exit();"><a href="batocerav35.html">
+          <h1>BATOCERA V35</h1></a>
+          <h5>La distro definitiva? </h5>
+          <img src="assets/body/batocera35.jpg" class="mainpic" /></a>
+        </article> 
+
+        <article class="main">
+          <a href="retrogamermag.html">
+          <h1>RETRO GAMER MAGAZINE</h1></a>
+          <h5>La revista del retro gaming definitiva! </h5>
+          <img src="assets/body/retrogamermag.png" class="mainpic" class alt="">
+        </article>
+    </div>
+    <div>
+    
+    <h2 id="not"> Estrenos destacados</h1>
+      <div id="flex">
+        <aside class="aside">
+          <h1 style="color:rgb(255, 251, 19);">Indies</h1>
+          <h5 style="text-align:center;">Octubre 2022</h5>
+          <ul>
+            <li><a href="https://youtu.be/1okoqNHFlXc" onclick="exit();"> Signalis </a> <b> 27/10</b> Steam</li>
+            <li><a href="https://youtu.be/vXfZ_xOeLLk" onclick="exit();">Cultic</a> <b>13/10</b> Steam EA</li>
+            <li><a href="https://youtu.be/0IO6Ou84VmI" onclick="exit();">Batora: Lost Haven</a> <b>20/10</b>  Steam, Nintendo Switch, PlayStation and Xbox</li>
+            <li><a href="https://youtu.be/W5N3zarmass" onclick="exit();">The Unliving</a> <b>21/10</b>  Steam EA</li>
+            <li><a href="https://youtu.be/GO9JgbFLfCw" onclick="exit();">Norco </a> <b>20/10 </b> PlayStation and Xbox</li>
+          </ul>
+          <p> <b id="foot"> </b></p>
+        </aside>
+
+        <aside class="aside">
+          <h1 >steam/epic</h1>
+          <h5 style="text-align:center;">Octubre 2022</h5>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=LGgqyer-qr4" onclick="exit();"> Overwatch 2</a> <b> 04/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=z7-UtJ57LdQ" onclick="exit();">Uncharted: Colección </a> <b>19/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=lVCx54PJzMw" onclick="exit();">Star Ocean The Divine Force</a> <b>27/10</b></li>
+            <li><a href="https://www.youtube.com/watch?v=r72GP1PIZa0" onclick="exit();">Call of Duty: Modern Warfare II</a> <b>28/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=j1ypmXRKkpg" onclick="exit();">The Chant</a> <b>31/10 </b></li>
+          </ul>
+          <p> <b id="foot"> </b></p>
+        </aside>
+        <aside class="aside">
+          <h1 style="color:rgb(4, 134, 21);">XBOX</h1>
+          <h5 style="text-align:center;">Octubre 2022</h5>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=WzkZbyJUZ6U" onclick="exit();"> Asterigos: Curse of the Stars </a> <b> 11/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=HEsUspaWfmc" onclick="exit();">Bloodwash </a> <b>12/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=sYlVTnfgj6E" onclick="exit();">Scorn</a> <b>14/10</b></li>
+            <li><a href="https://www.youtube.com/watch?v=ePwGCPBQ2Ak" onclick="exit();">A Plague Tale: Requiem</a> <b>18/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=GDWBL-lXE40" onclick="exit();">Persona 5 Royal </a> <b>21/10 </b></li>
+          </ul>
+          <p> <b id="foot"> </b></p>
+        </aside>
+        <aside class="aside">
+          <h1 style="color:rgb(255, 255, 255);">Playstation</h1>
+          <h5 style="text-align:center;">Octubre 2022</h5>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=Hhy0Rn-x4KM" onclick="exit();"> No More Heroes III </a> <b> 11/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=REicHG5ZR3U" onclick="exit();">Gotham Knights </a> <b>21/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=sYlVTnfgj6E" onclick="exit();">Scorn</a> <b>14/10</b></li>
+            <li><a href="https://www.youtube.com/watch?v=ePwGCPBQ2Ak" onclick="exit();">A Plague Tale: Requiem</a> <b>18/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=mtX1pxZ3aqE" onclick="exit();">Resident Evil RE:Verse </a> <b>28/10 </b></li>
+          </ul>
+          <p> <b id="foot"> </b></p>
+        </aside>
+        <aside class="aside">
+          <h1 style="color:red;">Nintendo</h1>
+          <h5 style="text-align:center;">Octubre 2022</h5>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=fq4f_7faOEg" onclick="exit();"> NieR:Automata</a> <b> 06/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=PH3pXMmXhdI" onclick="exit();">No Man's Sky </a> <b>07/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=JPCiBy7-UvY" onclick="exit();"> Prodeus </a> <b>07/10</b></li>
+            <li><a href="https://www.youtube.com/watch?v=FN48p_QXBUk" onclick="exit();">MARIO + RABBIDS SPARKS OF HOPE</a> <b>20/10</b> </li>
+            <li><a href="https://www.youtube.com/watch?v=ucLVDdqJVEE" onclick="exit();">Bayonetta 3</a> <b>28/10 </b></li>
+          </ul>
+          <p> <b id="foot"> </b></p>
+        </aside>
+        
+      </div> 
+      <a href="http://wa.me/5493364260927"><img id="wp" src="assets/icons/whatsapp64.png" alt="" srcset=""></a>
+    </div><br>
+    <footer class="foot">
+      &copy BROZMAN GERMAN ARIEL
+    </footer>
+  
+</body>
+
+</html>
